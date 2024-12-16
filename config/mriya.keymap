@@ -18,6 +18,20 @@
 &mt { quick_tap_ms = <200>; };
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        moba {
+            bindings = <&tog 2>;
+            key-positions = <50 42>;
+        };
+
+        FPC {
+            bindings = <&tog 3>;
+            key-positions = <50 43>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -37,7 +51,27 @@
 &kp SPACE  &kp TAB           &kp UP_ARROW    &kp W            &kp E   &kp R      &kp T     &kp Y          &kp U          &kp I      &kp O         &kp P          &kp LEFT_BRACKET      &kp PRINTSCREEN
            &kp LEFT          &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp D   &kp F      &kp G     &kp H          &kp J          &kp K      &kp L         &kp SEMICOLON  &kp SQT
            &kp LEFT_CONTROL  &kp Z           &kp X            &kp C   &kp V      &kp B     &kp N          &kp M          &kp COMMA  &kp PERIOD    &kp SLASH      &kp NON_US_BACKSLASH
-                                             &kp LEFT_ALT     &trans  &kp SPACE  &mo 2     &kp RIGHT_GUI  &kp BACKSPACE  &kp DEL    &kp LEFT_ALT
+                                             &kp LEFT_ALT     &trans  &kp SPACE  &mo 4     &kp RIGHT_GUI  &kp BACKSPACE  &kp DEL    &kp LEFT_ALT
+            >;
+        };
+
+        moba_layer {
+            bindings = <
+           &kp NUMBER_1      &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5     &kp NUMBER_6    &kp NUMBER_7  &kp N8     &kp NUMBER_9       &kp NUMBER_0  &kp MINUS  &kp EQUAL
+&kp GRAVE  &kp TAB           &kp Q         &kp W         &kp E         &kp R      &kp T           &kp Y         &kp U      &kp I              &kp O         &kp P      &kp LBKT              &kp RIGHT_BRACKET
+           &kp LEFT_SHIFT    &kp A         &kp S         &kp D         &kp F      &kp G           &kp H         &kp J      &kp K              &kp L         &kp SEMI   &kp SQT
+           &kp LEFT_CONTROL  &kp Z         &kp X         &kp C         &kp V      &kp B           &kp N         &kp M      &kp COMMA          &kp DOT       &kp FSLH   &kp NON_US_BACKSLASH
+                                           &kp LEFT_ALT  &kp SLASH     &kp SPACE  &kp P           &kp ENTER     &kp RSHFT  &kp RIGHT_CONTROL  &kp ESC
+            >;
+        };
+
+        fpc_layer {
+            bindings = <
+           &kp NUMBER_1      &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5     &kp NUMBER_6    &kp NUMBER_7  &kp N8     &kp NUMBER_9       &kp NUMBER_0  &kp MINUS  &kp EQUAL
+&kp GRAVE  &kp TAB           &kp Q         &kp W         &kp E         &kp R      &kp T           &kp Y         &kp U      &kp I              &kp O         &kp P      &kp LBKT              &kp RIGHT_BRACKET
+           &kp LEFT_SHIFT    &kp A         &kp S         &kp D         &kp F      &kp G           &kp H         &kp J      &kp K              &kp L         &kp SEMI   &kp SQT
+           &kp LEFT_CONTROL  &kp Z         &kp S         &kp C         &kp F      &kp B           &kp N         &kp M      &kp COMMA          &kp DOT       &kp FSLH   &kp NON_US_BACKSLASH
+                                           &kp LEFT_ALT  &kp SLASH     &kp SPACE  &kp P           &kp ENTER     &kp RSHFT  &kp RIGHT_CONTROL  &kp ESC
             >;
         };
 
