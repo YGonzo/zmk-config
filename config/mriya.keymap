@@ -37,17 +37,27 @@
 &kp SPACE  &kp TAB           &kp UP_ARROW    &kp W            &kp E   &kp R      &kp T     &kp Y     &kp U          &kp I      &kp O         &kp P          &kp LEFT_BRACKET  &kp PSCRN
            &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp D   &kp F      &kp G     &kp H     &kp J          &kp K      &kp L         &kp SEMICOLON  &kp SQT
            &kp LEFT_CONTROL  &kp Z           &kp X            &kp C   &kp V      &kp B     &kp N     &kp M          &kp COMMA  &kp PERIOD    &kp SLASH      &kp BACKSLASH
-                                             &kp LEFT_ALT     &trans  &kp SPACE  &mo 3     &kp RGUI  &kp BACKSPACE  &kp DEL    &kp LEFT_ALT
+                                             &kp LEFT_ALT     &trans  &kp SPACE  &mo 4     &kp RGUI  &kp BACKSPACE  &kp DEL    &kp LEFT_ALT
             >;
         };
 
-        layer_4 {
+        actiongame_layer {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+           &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5     &kp NUMBER_6    &kp N7     &kp N8     &kp N9     &kp N0      &kp MINUS  &kp EQUAL
+&kp GRAVE  &kp TAB         &kp Q         &kp W         &kp E         &kp R      &kp T           &kp Y      &kp U      &kp I      &kp O       &kp P      &kp LBKT       &kp RIGHT_BRACKET
+           &kp LEFT_SHIFT  &kp A         &kp S         &kp D         &kp F      &kp G           &kp H      &kp J      &kp K      &kp L       &kp SEMI   &kp APOS
+           &kp LCTRL       &kp Z         &kp S         &kp C         &kp F      &kp B           &kp N      &kp M      &kp COMMA  &kp DOT     &kp FSLH   &kp BACKSLASH
+                                         &kp LEFT_ALT  &kp SLASH     &kp SPACE  &kp L           &kp ENTER  &kp RSHFT  &kp RCTRL  &kp ESCAPE
+            >;
+        };
+
+        rtsgame_layer {
+            bindings = <
+           &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5     &kp NUMBER_6     &kp N7     &kp N8     &kp N9     &kp N0      &kp MINUS  &kp EQUAL
+&kp GRAVE  &kp TAB         &kp Q         &kp W         &kp E         &kp R      &kp T            &kp Y      &kp U      &kp I      &kp O       &kp P      &kp LBKT       &kp RIGHT_BRACKET
+           &kp LEFT_SHIFT  &kp A         &kp S         &kp D         &kp F      &kp G            &kp H      &kp J      &kp K      &kp L       &kp SEMI   &kp APOS
+           &kp LCTRL       &kp Z         &kp X         &kp C         &kp V      &kp B            &kp N      &kp M      &kp COMMA  &kp DOT     &kp FSLH   &kp BACKSLASH
+                                         &kp LEFT_ALT  &kp SLASH     &kp SPACE  &kp BACKSPACE    &kp ENTER  &kp RSHFT  &kp RCTRL  &kp ESCAPE
             >;
         };
 
